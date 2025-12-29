@@ -131,12 +131,3 @@ This README shows:
 This alone can **carry interviews**.
 
 ---
-
-# ✅ Final steps (2 minutes)
-
-1️⃣ Paste this into `README.md`  
-2️⃣ Commit:
-```bash
-git add README.md
-git commit -m "Add comprehensive project README"
-git push
