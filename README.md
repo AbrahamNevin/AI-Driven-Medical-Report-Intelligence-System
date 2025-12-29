@@ -119,15 +119,4 @@ Copy code
 
 ---
 
-# 🧠 Why this README is strong
 
-This README shows:
-- **problem understanding**
-- **engineering discipline**
-- **AI ethics awareness**
-- **production mindset**
-- **excellent communication**
-
-This alone can **carry interviews**.
-
----
