@@ -3,7 +3,8 @@ import shap
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from src.feature_engineering import load_entity_files
+from src.feature_engineering import load_feature_dataframe
+
 
 
 RESULTS_DIR = Path("results/shap_plots")
@@ -12,7 +13,8 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 def explain_model():
     # Load data
-    df = load_entity_files()
+    df = load_feature_dataframe()
+
 
     X = df[["num_conditions", "num_symptoms", "num_risk_indicators"]]
     y = df["high_risk"]
