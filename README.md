@@ -25,57 +25,122 @@ The system is designed with **interpretability, modularity, and production-readi
 
 ---
 
-## 🏗️ System Architecture
-
-Raw Reports (TXT/PDF)
-↓
-Preprocessing
-↓
-Entity Extraction (NLP)
-↓
-Feature Engineering
-↓
-Risk Classification (ML)
-↓
-Explainability (SHAP)
-↓
-LLM-based Summary
-
-
-Each stage is isolated, testable, and replaceable.
-
----
-
-
----
 
 ## ⚙️ Installation & Setup
 
-### 1️ Clone the repository
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/AbrahamNevin/AI-Driven-Medical-Report-Intelligence-System.git
 cd medical-report-ai
-
-### Create virtual environment
+2️⃣ Create virtual environment
+bash
+Copy code
 python -m venv venv
 venv\Scripts\activate
-
-### Install dependencies
+3️⃣ Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
+▶️ Running the Pipeline
+Run each stage independently:
 
-### Running the Pipeline
+Preprocessing
+bash
+Copy code
 python src/preprocess.py
-
-###Preprocessing
-python src/preprocess.py
-###Entity Extraction
+Entity Extraction
+bash
+Copy code
 python src/entity_extraction.py
-
-###Train ML Model
+Train ML Model
+bash
+Copy code
 python -m src.train_model
-
-###Explainability
+Explainability
+bash
+Copy code
 python -m src.explainability
-
-###LLM Summary (fallback works without API key)
+LLM Summary (fallback works without API key)
+bash
+Copy code
 python -m src.llm_summary
+🔍 Explainability with SHAP
+The system uses SHAP (SHapley Additive Explanations) to explain model predictions by quantifying how each feature contributes to the final risk score.
+
+Generated outputs:
+
+Feature importance plots
+
+Mean absolute SHAP values
+
+This is critical for regulated domains like healthcare and finance.
+
+🗣️ LLM Integration
+LLMs are used only for summarization, not decision-making.
+
+Fully optional
+
+Safe fallback if no API key is provided
+
+Secrets handled via .env
+
+Example summary:
+
+“The patient shows elevated risk due to the presence of cardiovascular risk indicators and reported symptoms.”
+
+🧠 Design Principles
+Explainability-first
+
+No black-box decisions
+
+Modular & extensible
+
+Ethically aligned AI usage
+
+Production-style code structure
+
+📌 Future Enhancements
+Use real labeled datasets
+
+Add severity-weighted features
+
+Introduce time-series analysis
+
+Deploy via FastAPI
+
+Extend entity extraction with domain-specific models
+
+🧾 Resume Summary
+Built an end-to-end AI system to process medical reports, extract structured clinical insights using NLP, predict patient risk with classical ML models, explain predictions using SHAP, and generate human-readable summaries via LLMs using a production-style architecture.
+
+👤 Author
+Nevin Abraham
+Computer Science & Engineering
+AI | Machine Learning | Data Analytics
+
+yaml
+Copy code
+
+---
+
+# 🧠 Why this README is strong
+
+This README shows:
+- **problem understanding**
+- **engineering discipline**
+- **AI ethics awareness**
+- **production mindset**
+- **excellent communication**
+
+This alone can **carry interviews**.
+
+---
+
+# ✅ Final steps (2 minutes)
+
+1️⃣ Paste this into `README.md`  
+2️⃣ Commit:
+```bash
+git add README.md
+git commit -m "Add comprehensive project README"
+git push
