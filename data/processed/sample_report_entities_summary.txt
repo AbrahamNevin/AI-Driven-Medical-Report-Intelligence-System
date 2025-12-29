@@ -1,0 +1,1 @@
+Summary unavailable (no LLM key). Detected conditions: hypertension. Symptoms: chest discomfort. Risk indicators: elevated blood glucose. Predicted risk score: 0.80.

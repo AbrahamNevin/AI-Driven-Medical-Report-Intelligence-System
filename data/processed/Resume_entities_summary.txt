@@ -1,0 +1,1 @@
+Summary unavailable (no LLM key). Detected conditions: None. Symptoms: None. Risk indicators: None. Predicted risk score: 0.20.
