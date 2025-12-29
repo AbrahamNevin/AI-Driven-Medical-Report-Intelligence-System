@@ -32,51 +32,50 @@ The system is designed with **interpretability, modularity, and production-readi
 ```bash
 git clone https://github.com/AbrahamNevin/AI-Driven-Medical-Report-Intelligence-System.git
 cd medical-report-ai
+```
 2️⃣ Create virtual environment
-bash
+```bash
 Copy code
 python -m venv venv
 venv\Scripts\activate
+```
 3️⃣ Install dependencies
-bash
+```bash
 Copy code
 pip install -r requirements.txt
+```
 ▶️ Running the Pipeline
 Run each stage independently:
 
 Preprocessing
-bash
+```bash
 Copy code
 python src/preprocess.py
+```
 Entity Extraction
-bash
+```bash
 Copy code
 python src/entity_extraction.py
+```
 Train ML Model
-bash
+```bash
 Copy code
 python -m src.train_model
+```
 Explainability
-bash
+```bash
 Copy code
 python -m src.explainability
+```
 LLM Summary (fallback works without API key)
-bash
+```bash
 Copy code
 python -m src.llm_summary
+```
 🔍 Explainability with SHAP
 The system uses SHAP (SHapley Additive Explanations) to explain model predictions by quantifying how each feature contributes to the final risk score.
 
-Generated outputs:
 
-Feature importance plots
-
-Mean absolute SHAP values
-
-This is critical for regulated domains like healthcare and finance.
-
-🗣️ LLM Integration
-LLMs are used only for summarization, not decision-making.
 
 Fully optional
 
@@ -108,10 +107,7 @@ Introduce time-series analysis
 
 Deploy via FastAPI
 
-Extend entity extraction with domain-specific models
-
-🧾 Resume Summary
-Built an end-to-end AI system to process medical reports, extract structured clinical insights using NLP, predict patient risk with classical ML models, explain predictions using SHAP, and generate human-readable summaries via LLMs using a production-style architecture.
+Extend entity extraction with domain-specific models.
 
 👤 Author
 Nevin Abraham
